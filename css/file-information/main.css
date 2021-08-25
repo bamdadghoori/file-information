@@ -1,0 +1,1355 @@
+@font-face {
+    font-family: Yekan;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot?#iefix') format('embedded-opentype'),
+		 url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.woff') format('woff'),
+		 url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Yekan;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.woff') format('woff'),
+		 url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Sahel;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.woff') format('woff'),
+         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: Sahel;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.woff') format('woff'),
+         url('https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  a {
+    color: #23272c;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display:inline-block;
+    margin: 40px 8px 10px 8px; 
+    color: #737373;
+  }
+  
+  
+  
+  /* STRUCTURE */
+  
+  .wrapper-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    /* min-height: 100%; */
+    padding: 20px;
+    position: relative;
+    top: -11vh;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    direction: rtl;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    font-family: yekan;
+  }
+  .register-link{
+    color: #0d6efd;
+    font-family: yekan;
+    font-size: 3vh;
+  }
+  
+  
+  /* TABS */
+  
+  h2.inactive {
+    color: #737373;
+  }
+  
+  h2.active {
+    color: #737373;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  
+  
+  /* FORM TYPOGRAPHY*/
+ 
+  input[type=button], input[type=submit], input[type=reset]{
+    background-color: #23272c;
+    
+    /* border: solid #23272c; */
+    cursor: pointer;
+    color: white;
+    padding-right: 2vw !important;
+    padding-left: 2vw !important;
+    padding:.375rem .75rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 3vh;
+    font-family: yekan;
+    -webkit-box-shadow: 0 2px 3px 0 #23272c;
+    box-shadow: 0 2px 3px 0 #23272c;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .select2-selection{
+    height: 6vh;
+    font-family: yekan;
+   
+  }
+  .select2-selection__choice{
+    background-color:#ffff00 !important;
+  }
+  #mobile{
+    direction: ltr;
+    text-align: left;
+    font-family:yekan;
+  }
+  .abilities option{
+    background-color: green;
+  }
+  .abilities{
+    height: fit-content;
+   height: -moz-fit-content;
+  }
+  .div-abilities{
+   margin-bottom: -1.5vh;
+    margin-top: 1vh;
+    font-family: yekan;
+  }
+  .abilities-title{
+    margin-bottom: 2vh;
+    font-weight: bold;
+  }
+  .game-programmer{
+    margin-right: 0.4vw;
+  }
+  .programmer{
+    margin-right:0.3vw ;
+  }
+  .gender{
+    margin-top: 2vh;
+    padding-left: 1vw;
+    justify-content: center;
+    font-family: yekan;
+    font-size: 3vh;
+    position: relative;
+  }
+  .gender input[type="radio"]{
+    transform: scale(1.5);
+  }
+  .gender label{
+    position: relative;
+    top:-0.5vh;
+  }
+  .gender span{
+    position: relative;
+    top:-0.5vh;
+    font-size: 3vh;
+  }
+  .gender-radios{
+    display: flex;
+    margin-right: 2vw;
+    padding-left: 2vw;
+  }
+  .div-female{
+    margin-right: 1vw;
+  }
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    /* background-color: rgba(255, 255, 34, 0.329) ; */
+    opacity: 0.9 !important;
+  }
+  
+  input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  input[type=text],input[type=password],select {
+    direction: rtl;
+    background-color: #f6f6f6;
+    border: none;
+    color: #737373;
+    padding: 7px 7px;
+    text-align: right;
+    text-decoration: none;
+    display: inlineblock;
+    font-size: 2.5vh;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  input[type=text],input[type=password]{
+    font-size:2.5vh;
+    margin-bottom:4vh;
+    font-family: yekan;
+  }
+  .buttonLoc{
+    margin-top:5vh !important;
+  }
+  input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  input[type=text]:placeholder {
+    color: #737373;
+  }
+  input[type=checkbox] {
+    transform: scale(1.5);
+}
+  .form-check{
+    direction:rtl;
+    left:6vw;
+    font-family:yekan;
+  }
+  .form-check-input{
+    margin-right:1vw;
+  }
+  .div-abilities .row{
+    /* left: -20vw; */
+  }
+  .div-abilities ul{
+    /* display: flex; */
+    list-style-type: none;
+    font-family: yekan;
+
+  }
+  .div-abilities ul li{
+    margin-right: 1vw;
+    margin-left: 1vw
+  }
+  .div-abilities input[type=radio]{
+    transform: scale(1.5);
+  }
+  /* ANIMATIONS */
+  
+  /* Simple CSS3 Fade-in-down Animation */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #737373;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+  
+  
+
+  /* OTHERS */
+  
+  .link-text{
+    width: 30vw;
+   z-index: 999;
+   border-radius: 5px 5px 5px 5px;
+  }
+  .img-group{
+    margin-top: 2vh;
+  }
+  #img-preview{
+    width: 20px;
+    height: 20px;
+  }
+  .img-label{
+    font-family: yekan;
+    font-size: 2.5vh;
+    font-weight: 600;
+  }
+  .material-group{
+    font-family: vazir;
+    
+    margin-top: 10vh;
+  }
+  input[type="radio"]{
+    transform: scale(1.5);
+  }
+  .material-radio-span{
+    font-family: vazir;
+    font-size: 2.5vh;
+    position: absolute;
+    top: 3vh;
+    font-weight: 600;
+  }
+  label{
+    font-weight: 500;
+  }
+  .link-div{
+    margin-top: 2vh;
+  }
+  *:focus {
+      outline: none;
+  } 
+  
+  #icon {
+    width:60%;
+  }
+  .forcible{
+    /* content:"*"; */
+color: red;
+
+font-size: 3vh;
+left: 0.2vw;
+top: 2vh;
+position: absolute;
+  
+}
+.forcible-abilities{
+  /* content:"*"; */
+color: red;
+
+font-size: 3vh;
+left: 4vw;
+top: 0.5vh;
+position: absolute;
+
+}
+.forcible-gender{
+  /* content:"*"; */
+color: red;
+
+font-size: 3vh;
+left: 11vw;
+top: -1vh;
+position: absolute;
+
+}
+.div-state{
+  margin-bottom: 3vh;
+}
+.div-state select{
+  padding: 5px 7px;
+}
+.floating-label-platform{
+  position: absolute;
+  top: -3vh;
+  font-family: vazir;
+  font-size: 2.5vh;
+  left: 9.5vw;
+  display: none;
+}
+
+.floating-label-material{
+  position: absolute;
+  top: -3vh;
+  font-family: vazir;
+  font-size: 2.5vh;
+  left: 11vw;
+  display: none;
+}
+.floating-label-link-text{
+  position: absolute;
+  top: 9px;
+  font-family: Yekan;
+  font-size: 2.5vh;
+  left: 27vw;
+  opacity: 1;
+  color: #737373;
+  
+}
+textarea:focus ~ .floating-label-link-text{
+  position: absolute;
+  top: -4vh;
+  bottom: 0px;
+  left:27vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+}
+.blurLabel-link-text{
+  position: absolute;
+  top: -4vh;
+  bottom: 0px;
+  left:27vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+}
+.floating-label-render{
+  position: absolute;
+  top: -3vh;
+  font-family: vazir;
+  font-size: 2.5vh;
+  left: 10vw;
+  display: none;
+}
+.floating-label-style{
+  position: absolute;
+  top: -3vh;
+  font-family: vazir;
+  font-size: 2.5vh;
+  left: 11vw;
+  display: none;
+}
+.floating-label-date {
+  font-family:yekan;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left:8vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+.floating-label-abilities {
+  font-family:yekan;
+  font-size: 3vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 5px;
+  left:27vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+
+.floating-label {
+    font-family:yekan;
+    font-size: 2.5vh;
+    color: #737373;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left:11vw;
+    width: fit-content;
+    width: -moz-fit-content;
+    transition: all 0.1s ease;
+    
+}
+
+input:focus ~ .floating-label {
+    position: absolute;
+    top: -3vh;
+    bottom: 0px;
+    left:11vw;
+    /* font-size: 11px; */
+    opacity: 1;
+    color: #737373;
+    font-family: yekan;
+     
+}
+.floating-label-size {
+  font-family:yekan;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left:11vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+input:focus ~ .floating-label-size {
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:11vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+   
+}
+.floating-label-format {
+  font-family:yekan;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left:10.5vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+input:focus ~ .floating-label-format {
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:10.5vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+   
+}
+.floating-label-category {
+  font-family:yekan;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left:8.5vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+input:focus ~ .floating-label-category {
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:8.5vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+   
+}
+.floating-label-membership-time {
+  font-family:yekan;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left:8vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+input:focus ~ .floating-label-membership-time{
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:8vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+   
+}
+.floating-label-price{
+  font-family:vazir;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left:10.5vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+input:focus ~ .floating-label-price{
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:10.5vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: vazir;
+   
+}
+
+.blurLabel-price{
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:10.5vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: vazir;
+}
+.blurLabel-title{
+  top: -3vh !important;
+  bottom: 0px !important;
+  left:11vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+.blurLabel-category{
+  top: -3vh !important;
+  bottom: 0px !important;
+  left:8.5vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+.blurLabel-format{
+  top: -3vh !important;
+  bottom: 0px !important;
+  left:10.5vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+.blurLabel-size{
+  top: -3vh !important;
+  bottom: 0px !important;
+  left:11vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+
+.blurLabel-membership-time{
+  top: -3vh !important;
+  bottom: 0px !important;
+  left:8vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+.blurLabel-membership-type{
+  top: -3vh !important;
+  bottom: 0px !important;
+  left:8.5vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+.blurLabel-abilities{
+  top: -4vh !important;
+  bottom: 0px !important;
+  left:27vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+}
+.login-title{
+    font-family: yekan;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+/* validation */
+.fa-exclamation-triangle{
+  color: #737373 !important;
+  background-color: inherit !important;
+  margin-right: 1vw;
+
+}
+
+.vali{
+  left: 40vw;
+  top: 2vh;
+
+    position: relative;
+    display: none;
+    margin-bottom: -10vh;
+    font-family: yekan;
+    direction: rtl;
+    width: fit-content;
+   height: fit-content;
+   width: -moz-fit-content;
+   height: -moz-fit-content;
+}
+.valiWhole{
+  float: right;
+  width: fit-content;
+  width: -moz-fit-content;
+ }
+ .vali-password{
+  left:20vw !important
+}
+ @media(max-width:600px) {
+        
+  .blurLabel{
+      top: -3vh !important;
+      bottom: 0px !important;
+      left:50vw !important;
+      /* font-size: 11px; */
+      opacity: 1;
+      color: #737373 !important;
+      font-family: yekan;
+
+  }
+}
+
+ 
+  .blurLabel-date{
+    top: -4vh !important;
+    bottom: 0px !important;
+    left:8vw !important;
+    /* font-size: 11px; */
+    opacity: 1;
+    color: #737373 !important;
+    font-family: yekan;
+
+}
+
+/*end of validation */
+
+/* responsive */
+@media(max-width:530px){
+  .floating-label{
+    left:37vw;
+  }
+  input:focus ~ .floating-label{
+    left:37vw;
+        top: -3vh;
+  }
+  .floating-label-category{
+    left: 48vw;
+  }
+  input:focus ~ .floating-label-category{
+    left: 48vw;
+  }
+  .floating-label-format{
+left: 56.5vw;
+  }
+  input:focus ~ .floating-label-format{
+    left: 56.5vw;
+  }
+  .floating-label-date{
+   left:44vw;
+  }
+  .floating-label-size{
+    left: 52vw;
+  }
+  input:focus ~ .floating-label-size{
+    left: 52vw;
+  }
+  .floating-label-membership-time{
+   left: 44vw;
+  }
+  input:focus ~ .floating-label-membership-time{
+        left: 44vw;
+  }
+  .floating-label-price{
+   left: 47vw;
+  }
+  input:focus ~ .floating-label-price{
+    left: 47vw;
+  }
+  .select2-container{
+    width: 67vw !important;
+    left: -4vw;
+}
+.floating-label-abilities{
+  left: 54vw !important;
+}
+.blurLabel-name-family{
+  left: 37vw !important;
+}
+.blurLabel-mobile{
+  left: 48vw !important;
+}
+.blurLabel-email{
+  left: 56.5vw !important
+  ;
+}
+.blurLabel-membership-time{
+  left: 44vw !important;
+}
+.blurLabel-password{
+  left: 52vw !important;
+}
+.blurLabel-membership-type{
+  left: 47vw !important;
+}
+.blurLabel-date{
+  left:44vw !important;
+}
+.floating-label-platform{
+  left: 58.5vw;
+}
+  
+  .wrapper{
+    top:17vh
+}
+.vali{
+  /* position: relative; */
+  top:20vh;
+  left: 20vw;
+}
+  body{
+    position: relative;
+  }
+ 
+  .form-check-input {
+    margin-right: -6vw;
+}
+.vali-password {
+  left: 24vw !important;
+  width: 60vw;
+}
+.game-programmer {
+  margin-right: 1.8vw;
+}
+.animator{
+  position: relative;
+    left: 2.2vw;
+}
+.programmer {
+  margin-right: unset;
+  position: relative;
+  left: 2vw;
+}
+.designer{
+  position: relative;
+    left: -4vw;
+}
+.architect{
+  position: relative;
+    left: -3.7vw;
+}
+
+}
+/* responsive miani */
+@media screen  and (min-width:531px) and (max-width:700px){
+  .vali{
+    top:27vh;
+    left:32vw;
+  }
+  .vali-password {
+    left: 22vw !important;
+    width: 60vw;
+}
+  .wrapper{
+    top:27vh;
+  }
+  body{
+    position: relative;
+  }
+  .floating-label{
+    left:37vw;
+  }
+  input:focus ~ .floating-label{
+    left:37vw;
+  }
+  /* input:focus ~ .floating-label{
+    left:35vw;
+        top: -3vh;
+  } */
+  .floating-label-category{
+    left: 49vw;
+  }
+  input:focus ~ .floating-label-category{
+    left: 49vw;
+  }
+  .floating-label-format{
+left: 58vw;
+  }
+  input:focus ~ .floating-label-format{
+    left: 58vw;
+  }
+  .floating-label-date{
+   left:45vw;
+  }
+  .floating-label-size{
+    left: 54vw;
+  }
+  input:focus ~ .floating-label-size{
+    left: 54vw;
+  }
+  .floating-label-membership-time{
+   left: 45vw;
+  }
+  input:focus ~ .floating-label-membership-time{
+        left: 45vw;
+  }
+  .floating-label-price{
+   left: 48vw;
+  }
+  input:focus ~ .floating-label-price{
+    left: 48vw;
+  }
+  .select2-container{
+    width: 67vw !important;
+    left: -4vw;
+}
+.floating-label-abilities{
+  left: 54vw !important;
+}
+.blurLabel-name-family{
+  left: 37vw !important;
+}
+.blurLabel-mobile{
+  left: 49vw !important;
+}
+.blurLabel-email{
+  left: 58.5vw !important
+  ;
+}
+.blurLabel-membership-time{
+  left: 45vw !important;
+}
+.blurLabel-password{
+  left: 54vw !important;
+}
+.blurLabel-membership-type{
+  left: 48vw !important;
+}
+.blurLabel-date{
+  left:45vw !important;
+}
+.floating-label-platform{
+  left: 58.5vw;
+}
+.select2-container{
+  width: 58vw !important;
+  left: -3vw;
+}
+
+  input[type=text]{
+    font-size: 3vh;
+  }
+  input[type=password] {
+    font-size: 3vh;
+}
+  .blurLabel{
+    left: 52vw !important;
+  }
+  footer{
+    margin-top: 28vh;
+  }
+  .form-check-input {
+    margin-right: -3vw;
+}
+.animator{
+  position: relative;
+    left: 3vw;
+}
+.animator{
+  position: relative;
+    left: 2vw;
+}
+.programmer {
+  margin-right: unset;
+  position: relative;
+  left: 1.8vw;
+}
+.designer{
+  position: relative;
+    left: -2vw;
+}
+.architect{
+  position: relative;
+    left: -2vw;
+}
+}
+@media screen and (min-width:701px) and (max-width:992px) {
+  .vali{
+    /* top:20vh; */
+    left:32vw;
+    margin-top: 6vh;
+  }
+  .vali-password{
+    left: 7vw !important;
+  }
+  .floating-label{
+    left: 7vw;
+    font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label{
+    left: 7vw;
+    font-size: 2vh;
+
+  }
+  /* input:focus ~ .floating-label{
+    left:35vw;
+        top: -3vh;
+  } */
+  .floating-label-category{
+    left: 12vw;
+    font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-category{
+    left: 12vw;
+    font-size: 2vh;
+
+  }
+  .floating-label-format{
+left: 17vw;
+font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-format{
+    left: 17vw;
+    font-size: 2vh;
+
+  }
+  .floating-label-date{
+   left:10vw;
+   font-size: 2vh;
+
+  }
+  .floating-label-size{
+    left: 15vw;
+    font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-size{
+    left: 15vw;
+    font-size: 2vh;
+
+  }
+  .floating-label-membership-time{
+   left: 10vw;
+   font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-membership-time{
+        left: 10vw;
+        font-size: 2vh;
+
+  }
+  .floating-label-price{
+   left: 11vw;
+   font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-price{
+    left: 11vw;
+    font-size: 2vh;
+
+  }
+
+  .blurLabel-name-family{
+    left: 7vw !important;
+  }
+  .blurLabel-mobile{
+    left: 12vw !important;
+  }
+  .blurLabel-email{
+    left: 17vw !important
+    ;
+  }
+  .blurLabel-membership-time{
+    left: 10vw !important;
+  }
+  .blurLabel-password{
+    left: 15vw !important;
+  }
+  .blurLabel-membership-type{
+    left: 11vw !important;
+  }
+  .blurLabel-date{
+    left:10vw !important;
+  }
+  .floating-label-platform{
+    left: 18vw;
+    font-size: 2vh;
+  }
+  .floating-label-abilities
+  {
+   left: 43vw;
+  }
+  .blurLabel-abilities{
+    left: 43vw !important;
+  }
+  input[type=text]{
+    font-size: 2vh;
+  }
+  input[type=password] {
+    font-size: 2vh;
+}
+  .blurLabel{
+    left: 35vw !important;
+  }
+  .form-check-input {
+    margin-right: -3vw;
+}
+.div-state {
+  margin-bottom: 4vh;
+}
+.div-state select {
+  padding: 10px 7px;
+}
+}
+@media screen and (min-width:993px) and (max-width:1100px){
+  input[type=submit]{
+    margin-top: 2vh;
+  }
+  input[type=text]{
+    font-size: 2vh;
+  }
+  input[type=password] {
+    font-size: 2vh;
+}
+  
+  .floating-label{
+    left: 2vw;
+    font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label{
+    left: 2vw;
+    font-size: 2vh;
+
+  }
+  /* input:focus ~ .floating-label{
+    left:35vw;
+        top: -3vh;
+  } */
+  .floating-label-category{
+    left: 8vw;
+    font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-category{
+    left: 8vw;
+    font-size: 2vh;
+
+  }
+  .floating-label-format{
+left: 13vw;
+font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-format{
+    left: 13vw;
+    font-size: 2vh;
+
+  }
+  .floating-label-date{
+   left:5vw;
+   font-size: 2vh;
+
+  }
+  .floating-label-size{
+    left: 10vw;
+    font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-size{
+    left: 10vw;
+    font-size: 2vh;
+
+  }
+  .floating-label-membership-time{
+   left: 5vw;
+   font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-membership-time{
+        left: 5vw;
+        font-size: 2vh;
+
+  }
+  .floating-label-price{
+   left: 6vw;
+   font-size: 2vh;
+
+  }
+  input:focus ~ .floating-label-price{
+    left: 6vw;
+    font-size: 2vh;
+
+  }
+
+  .blurLabel-name-family{
+    left: 2vw !important;
+  }
+  .blurLabel-mobile{
+    left: 8vw !important;
+  }
+  .blurLabel-email{
+    left: 13vw !important
+    ;
+  }
+  .blurLabel-membership-time{
+    left: 5vw !important;
+  }
+  .blurLabel-password{
+    left: 10vw !important;
+  }
+  .blurLabel-membership-type{
+    left: 6vw !important;
+  }
+  .blurLabel-date{
+    left:5vw !important;
+  }
+  .floating-label-platform{
+    left: 12vw;
+    font-size: 2vh;
+  }
+  .floating-label-abilities
+  {
+   left: 30vw;
+  }
+  .blurLabel-abilities{
+    left: 30vw !important;
+  }
+  .blurLabel{
+    left: 27vw;
+  }
+  .forcible-gender{
+    left: 8vw;
+  }
+  .floating-label-abilities{
+    font-size: 2vh;
+  }
+  .div-state {
+    margin-bottom: 4vh;
+  }
+  .div-state select {
+    padding: 13px 7px;
+}
+}
