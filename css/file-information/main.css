@@ -61,7 +61,7 @@
     /* min-height: 100%; */
     padding: 20px;
     position: relative;
-    top: -11vh;
+    
   }
   
   #formContent {
@@ -212,7 +212,7 @@
     transform: scale(0.95);
   }
   
-  input[type=text],input[type=password],select {
+  input[type=text],input[type=password],select,input[type=number] {
     direction: rtl;
     background-color: #f6f6f6;
     border: none;
@@ -233,7 +233,7 @@
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
   }
-  input[type=text],input[type=password]{
+  input[type=text],input[type=password],input[type=number]{
     font-size:2.5vh;
     margin-bottom:4vh;
     font-family: yekan;
@@ -241,7 +241,7 @@
   .buttonLoc{
     margin-top:5vh !important;
   }
-  input[type=text]:focus {
+  input[type=text]:focus ,input[type=number]:focus{
     background-color: #fff;
     border-bottom: 2px solid #5fbae9;
   }
@@ -391,8 +391,8 @@
     margin-top: 2vh;
   }
   #img-preview{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .img-label{
     font-family: yekan;
@@ -413,6 +413,23 @@
     position: absolute;
     top: 3vh;
     font-weight: 600;
+  }
+  .material-radio-span{
+    font-family: vazir;
+    font-size: 2.5vh;
+    position: absolute;
+    top: 3vh;
+    font-weight: 600;
+  }
+  .activity-radio-span{
+    font-family: vazir;
+    font-size: 2.5vh;
+    position: absolute;
+    top: 3vh;
+    font-weight: 600;
+  }
+  .div-non-active{
+    margin-left: 1vw;
   }
   label{
     font-weight: 500;
@@ -437,26 +454,37 @@ top: 2vh;
 position: absolute;
   
 }
-.forcible-abilities{
+.forcible-activity{
   /* content:"*"; */
 color: red;
 
 font-size: 3vh;
-left: 4vw;
-top: 0.5vh;
+left: 1.5vw;
+top: 2vh;
 position: absolute;
 
 }
-.forcible-gender{
+.forcible-link-text{
   /* content:"*"; */
 color: red;
 
 font-size: 3vh;
-left: 11vw;
-top: -1vh;
+left: 1.5vw;
+top: 2vh;
 position: absolute;
 
 }
+.forcible-material{
+  /* content:"*"; */
+color: red;
+
+font-size: 3vh;
+left: 1vw;
+top: 2vh;
+position: absolute;
+
+}
+
 .div-state{
   margin-bottom: 3vh;
 }
@@ -585,7 +613,7 @@ input:focus ~ .floating-label {
   position: absolute;
   pointer-events: none;
   top: 9px;
-  left:11vw;
+  left:9vw;
   width: fit-content;
   width: -moz-fit-content;
   transition: all 0.1s ease;
@@ -595,7 +623,55 @@ input:focus ~ .floating-label-size {
   position: absolute;
   top: -3vh;
   bottom: 0px;
+  left:9vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+   
+}
+.floating-label-code {
+  font-family:yekan;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
   left:11vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+input:focus ~ .floating-label-code {
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:11vw;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373;
+  font-family: yekan;
+   
+}
+.floating-label-nick-name{
+  font-family:yekan;
+  font-size: 2.5vh;
+  color: #737373;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left:9vw;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.1s ease;
+  
+}
+input:focus ~ .floating-label-nick-name {
+  position: absolute;
+  top: -3vh;
+  bottom: 0px;
+  left:9vw;
   /* font-size: 11px; */
   opacity: 1;
   color: #737373;
@@ -609,7 +685,7 @@ input:focus ~ .floating-label-size {
   position: absolute;
   pointer-events: none;
   top: 9px;
-  left:10.5vw;
+  left:11.5vw;
   width: fit-content;
   width: -moz-fit-content;
   transition: all 0.1s ease;
@@ -619,7 +695,7 @@ input:focus ~ .floating-label-format {
   position: absolute;
   top: -3vh;
   bottom: 0px;
-  left:10.5vw;
+  left:11.5vw;
   /* font-size: 11px; */
   opacity: 1;
   color: #737373;
@@ -732,7 +808,7 @@ input:focus ~ .floating-label-price{
 .blurLabel-format{
   top: -3vh !important;
   bottom: 0px !important;
-  left:10.5vw !important;
+  left:11.5vw !important;
   /* font-size: 11px; */
   opacity: 1;
   color: #737373 !important;
@@ -742,6 +818,16 @@ input:focus ~ .floating-label-price{
 .blurLabel-size{
   top: -3vh !important;
   bottom: 0px !important;
+  left:9vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+.blurLabel-code{
+  top: -3vh !important;
+  bottom: 0px !important;
   left:11vw !important;
   /* font-size: 11px; */
   opacity: 1;
@@ -749,6 +835,17 @@ input:focus ~ .floating-label-price{
   font-family: yekan;
 
 }
+.blurLabel-nick-name{
+  top: -3vh !important;
+  bottom: 0px !important;
+  left:9vw !important;
+  /* font-size: 11px; */
+  opacity: 1;
+  color: #737373 !important;
+  font-family: yekan;
+
+}
+
 
 .blurLabel-membership-time{
   top: -3vh !important;
@@ -792,14 +889,23 @@ input:focus ~ .floating-label-price{
   margin-right: 1vw;
 
 }
-
+.bg-danger {
+  background-color: #dc3545!important;
+  color: #fff !important;
+}
+.mb-2 {
+  margin-bottom: .5rem!important;
+}
+.p-3 {
+  padding: 1rem!important;
+}
 .vali{
-  left: 40vw;
-  top: 2vh;
+  left: -11vw;
+  top: -1.5vh;
 
     position: relative;
     display: none;
-    margin-bottom: -10vh;
+    
     font-family: yekan;
     direction: rtl;
     width: fit-content;
@@ -846,17 +952,24 @@ input:focus ~ .floating-label-price{
 /* responsive */
 @media(max-width:530px){
   .floating-label{
-    left:37vw;
+    left:53vw;
   }
   input:focus ~ .floating-label{
-    left:37vw;
+    left:53vw;
+        top: -3vh;
+  }
+  .floating-label-nick-name{
+    left:45vw;
+  }
+  input:focus ~ .floating-label-nick-name{
+    left:45vw;
         top: -3vh;
   }
   .floating-label-category{
-    left: 48vw;
+    left: 44vw;
   }
   input:focus ~ .floating-label-category{
-    left: 48vw;
+    left: 44vw;
   }
   .floating-label-format{
 left: 56.5vw;
@@ -868,22 +981,22 @@ left: 56.5vw;
    left:44vw;
   }
   .floating-label-size{
-    left: 52vw;
+    left: 47vw;
   }
   input:focus ~ .floating-label-size{
-    left: 52vw;
+    left: 47vw;
   }
-  .floating-label-membership-time{
-   left: 44vw;
+  .floating-label-code{
+   left: 57vw;
   }
-  input:focus ~ .floating-label-membership-time{
-        left: 44vw;
+  input:focus ~ .floating-label-code{
+        left: 57vw;
   }
   .floating-label-price{
-   left: 47vw;
+   left: 54vw;
   }
   input:focus ~ .floating-label-price{
-    left: 47vw;
+    left: 54vw;
   }
   .select2-container{
     width: 67vw !important;
@@ -892,39 +1005,65 @@ left: 56.5vw;
 .floating-label-abilities{
   left: 54vw !important;
 }
-.blurLabel-name-family{
-  left: 37vw !important;
+.blurLabel-title{
+  left: 53vw !important;
 }
-.blurLabel-mobile{
-  left: 48vw !important;
+.blurLabel-category{
+  left: 44vw !important;
 }
-.blurLabel-email{
-  left: 56.5vw !important
+.blurLabel-nick-name{
+  left: 45vw !important
   ;
 }
-.blurLabel-membership-time{
-  left: 44vw !important;
+.blurLabel-size{
+  left: 57vw !important;
+}
+.blurLabel-format{
+  left:56.5vw !important;
 }
 .blurLabel-password{
   left: 52vw !important;
 }
-.blurLabel-membership-type{
-  left: 47vw !important;
+.blurLabel-code{
+  left: 57vw !important;
 }
 .blurLabel-date{
   left:44vw !important;
 }
 .floating-label-platform{
-  left: 58.5vw;
+  left: 48vw;
 }
-  
-  .wrapper{
-    top:17vh
+.floating-label-render{
+  left:51vw;
+}
+.floating-label-style{
+  left: 54vw;
+}
+.floating-label-link-text{
+  left: 46vw;
+}
+textarea:focus ~ .floating-label-link-text{
+  left: 46vw;
+}
+.link-text{
+  width: 60vw;
+}
+.forcible-link-text{
+  left:5.5vw;
+}
+.forcible-material{
+  left:7vw;
+}
+.forcible-activity{
+  left:7vw
+}
+.material-row{
+  margin-bottom:3vh ;
 }
 .vali{
   /* position: relative; */
-  top:20vh;
-  left: 20vw;
+  /* top:20vh; */
+  left: -9vw;
 }
   body{
     position: relative;

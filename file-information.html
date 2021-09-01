@@ -389,26 +389,12 @@ desired effect
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        عنوان صفحه
-        <small>توضیحات</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> خانه</a></li>
-        <li class="active">صفحه</li>
-      </ol>
-    </section>
+   
 
     <!-- Main content -->
     <section class="content container-fluid">
 
-        <div class="p-3 mb-2 bg-danger text-white vali row">
-            <!-- <div class="valiWhole"></div>  -->
-           
-            <div class="valiWhole"></div>
-                <i class="fa fa-exclamation-triangle"></i>
-                </div> 
+         
       <div class="wrapper-form fadeInDown">
           <div id="formContent">
             <!-- Tabs Titles -->
@@ -417,7 +403,12 @@ desired effect
             <div class="fadeIn first login-title">
              مدیریت فایل
             </div>
-        
+            <div class="p-3 mb-2 bg-danger text-white vali row">
+              <!-- <div class="valiWhole"></div>  -->
+             
+              <div class="valiWhole"></div>
+                  <i class="fa fa-exclamation-triangle"></i>
+                  </div>
             <!-- Login Form -->
             <form>
               <div class="row" dir="rtl">
@@ -425,31 +416,40 @@ desired effect
                 <div style="position: relative;" class="fadeIn second">
               <input type="text" class="blur-title" id="title"  name="title">
               <label class="floating-label">عنوان</label>
-              <!-- <div class="forcible">*</div> -->
+              <div class="forcible">*</div>
           </div>
           <div style="position: relative;" class="fadeIn third">
               <input type="text" id="category" class="blur-category" name="category">
               <label class="floating-label-category">دسته بندی</label>
-              <!-- <div class="forcible">*</div> -->
+              <div class="forcible">*</div>
           </div>
           <div style="position: relative;" class="fadeIn third">
             <input type="text" id="format" class="blur-format" name="format" >
-            <label class="floating-label-format">فرمت</label>
-            <!-- <div class="forcible">*</div> -->
+            <label class="floating-label-format">نوع</label>
+            <div class="forcible">*</div>
          
         </div>
         <div style="position: relative;" class="fadeIn third ">
-          <input type="text" id="size" class="blur-size" name="size" >
-          <label class="floating-label-size">سایز</label>
-          <!-- <div class="forcible">*</div> -->
+          <input type="number" id="size" class="blur-size" name="size"  >
+          <label class="floating-label-size">سایز(kb)</label>
+          <div class="forcible">*</div>
       </div>
-  
+      <div style="position: relative;" class="fadeIn third ">
+        <input type="number" id="code" class="blur-code" name="code" >
+        <label class="floating-label-code">کد</label>
+        <div class="forcible">*</div>
+    </div>
         </div>
         <div class="col-md-6">
+          <div style="position: relative;" class="fadeIn third ">
+            <input type="text" id="nick-name" class="blur-nick-name" name="nick-name" >
+            <label class="floating-label-nick-name">نام مستعار</label>
+            <div class="forcible">*</div>
+          </div>
             <div style="position: relative;" class="fadeIn third">
                 <input type="text" id="price" class="blur-price" name="price" >
                 <label class="floating-label-price">price</label>
-                <!-- <div class="forcible">*</div> -->
+              
               
               </div>
           <div style="position: relative;" class="fadeIn second div-state">
@@ -459,8 +459,7 @@ desired effect
         <option id="platform-option">platform</option>
         <option>تهران</option>
       </select>
-        <!-- <label class="floating-label ">تلفن همراه</label> -->
-        <!-- <div class="forcible">*</div> -->
+      
     </div>
     <div style="position: relative;" class="fadeIn second div-state">
         <div class="floating-label-render">render</div>
@@ -469,8 +468,8 @@ desired effect
     <option id="render-option">render</option>
     <option>تهران</option>
   </select>
-    <!-- <label class="floating-label ">تلفن همراه</label> -->
-    <!-- <div class="forcible">*</div> -->
+    
+
 </div>
 <div style="position: relative;" class="fadeIn second div-state">
     <div class="floating-label-style">style</div>
@@ -479,8 +478,7 @@ desired effect
 <option id="style-option">style</option>
 <option>تهران</option>
 </select>
-<!-- <label class="floating-label ">تلفن همراه</label> -->
-<!-- <div class="forcible">*</div> -->
+
 </div>
 
   </div>
@@ -491,12 +489,12 @@ desired effect
           <div style="position: relative;" class="fadeIn second">
     <textarea class="blur-link-text link-text" id="link-text"   name="link-text"></textarea>
             <label class="floating-label-link-text">لینک دانلود</label>
-            <!-- <div class="forcible">*</div> -->
+            <div class="forcible-link-text">*</div>
         </div>
     </div>
     <div class="row img-group">
         <div class="col-md-6">
-         <span class="img-label">تصاویر</span>
+         <span class="img-label">تصویر</span>
         </div>
         <div class="col-md-6">
         <img alt="هیچ تصویری انتخاب نشده" id="img-preview">
@@ -504,46 +502,48 @@ desired effect
     </div>
          <div class="row material-group">
              <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row material-row">
+                    <div class="col-md-6 col-xs-6">
                        <span class="material-radio-span">material:</span>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-6">
                         <div>
-                            <label for="inlineCheckbox1">دارد</label>
-                            <input type="radio" id="inlineCheckbox1" name="material" value="has">
+                            <label for="material-has">دارد</label>
+                            <input type="radio" id="material-has" name="material" value="has">
                           </div>
                        <div>
-                           <label for="inlineCheckbox1">ندارد</label>
-                           <input type="radio" id="inlineCheckbox1" name="material" value="doesn't-have">
+                           <label for="material-doesn't-have">ندارد</label>
+                           <input type="radio" id="material-doesnt-have" class="mhd" name="material" value="doesn't-have">
                          </div>
                     </div>
+                    <div class="forcible-material">*</div>
                 </div>
              </div>
 
              <div class="col-md-6">
-                <div style="position: relative;" class="fadeIn second div-state">
-                    <div class="floating-label-material">material type</div>
-              <select id="material-type">
-                
-                <option id="material-type-option">material type</option>
-                <option>تهران</option>
-              </select>
-                <!-- <label class="floating-label ">تلفن همراه</label> -->
-                <!-- <div class="forcible">*</div> -->
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                   <span class="activity-radio-span">وضعیت:</span>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <div>
+                        <label for="inlineCheckbox1">فعال</label>
+                        <input type="radio" id="active" name="activity" value="active">
+                      </div>
+                   <div class="div-non-active">
+                       <label for="inlineCheckbox1">غیرفعال</label>
+                       <input type="radio" id="non-active" name="activity" value="non-active">
+                     </div>
+                </div>
+                <div class="forcible-activity">*</div>
             </div>
             </div>
          </div>
-       
+        
           <div>
-              <input type="submit" class="fadeIn fourth buttonLoc" value="ثبت">
+              <input type="submit" class="fadeIn fourth buttonLoc" id="regist-file-information" value="ثبت">
           </div>
-              <!-- <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                 مرا به خاطر بسپار
-                </label>
-              </div> -->
+             
             </form>
         
             <!-- Remind Passowrd -->
@@ -648,9 +648,10 @@ desired effect
 <!-- Bootstrap 3.3.7 -->
 <script src="vendor\bootstrap\js\popper.js"></script>
 <script src="vendor\bootstrap\js\bootstrap.min.js"></script>
+<script src="js/dashboard/adminlte.min.js"></script>
 <script src="js\file-information\main.js"></script>
 <!-- AdminLTE App -->
-<script src="js/dashboard/adminlte.min.js"></script>
+
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

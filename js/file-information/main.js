@@ -37,6 +37,24 @@ $(document).ready(function(){
      }
      
     })
+    $(".blur-code").blur(function(){
+        if(!$(this).val()){
+        $(this).next().removeClass("blurLabel-code");
+     }
+     else{
+         $(this).next().addClass("blurLabel-code");
+     }
+     
+    })
+    $(".blur-nick-name").blur(function(){
+        if(!$(this).val()){
+        $(this).next().removeClass("blurLabel-nick-name");
+     }
+     else{
+         $(this).next().addClass("blurLabel-nick-name");
+     }
+     
+    })
     $(".blur-price").blur(function(){
         if(!$(this).val()){
         $(this).next().removeClass("blurLabel-price");
@@ -132,16 +150,48 @@ $(document).ready(function(){
             }
         
     })
-       
+    
     $("#link-text").change(function(){
     $("#img-preview").attr("src",$(this).val())    
     })
-//     $(".nav-link").click(function()
-//   {
-//  $(".nav-link").removeClass("active");
-//  $(this).addClass("active");
-  
-// })
+      //validations 
+$("#regist-file-information").click(function(e){
+   
+    var reLink = new RegExp('^(https?:\\/\\/)?'+ // protocol
+    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+    '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+    // console.log(reLink.test($("#link-text").val()))
+    if(!$("#title").val()||!$("#category").val()|!$("#format").val()||!$("#size").val()||!$("#code").val()||!$("#nick-name").val()||!$("#link-text").val()){
+        e.preventDefault();
+        $("html,body").animate({scrollTop:0},500)
+        $(".vali").css("display","block")
+        $(".valiWhole").text("لطفاً فیلد های ستاره دار را پر کنید")
+    }
+    else if(!$("#material-has").is(":checked") && !$("#material-doesnt-have").is(":checked")){
+      
+        e.preventDefault();
+        $("html,body").animate({scrollTop:0},500)
+        $(".vali").css("display","block")
+        $(".valiWhole").text("لطفاً فیلد های ستاره دار را پر کنید")
+    }
+    else if(!$("#active").is(":checked") && !$("#non-active").is(":checked")){
+      
+        e.preventDefault();
+        $("html,body").animate({scrollTop:0},500)
+        $(".vali").css("display","block")
+        $(".valiWhole").text("لطفاً فیلد های ستاره دار را پر کنید")
+    }
+    else if(reLink.test($("#link-text").val())===false){
+ 
+        e.preventDefault();
+        $("html,body").animate({scrollTop:0},500)
+        $(".vali").css("display","block")
+        $(".valiWhole").text("لینک دانلود وارد شده صحیح نیست")
+    }
+})
 
 //     $('.buttonLoc').click(function(e){
        

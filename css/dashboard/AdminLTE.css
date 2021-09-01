@@ -13,6 +13,10 @@ html,
 body {
   height: 100%;
 }
+.wrapper nav {
+  background-color: #23272c !important;
+  color: white !important;
+}
 .layout-boxed html,
 .layout-boxed body {
   height: 100%;
@@ -28,7 +32,7 @@ body {
   height: 100%;
   position: relative;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .wrapper:before,
 .wrapper:after {
@@ -245,14 +249,14 @@ a:focus {
     border: 0;
   }
 }
-.main-header .sidebar-toggle {
+.navbar .sidebar-toggle {
   float: right;
   background-color: transparent;
   background-image: none;
   padding: 15px 15px;
   font-family: fontAwesome;
 }
-.main-header .sidebar-toggle:before {
+.navbar .sidebar-toggle:before {
   content: "\f0c9";
 }
 .main-header .sidebar-toggle:hover {
@@ -270,14 +274,14 @@ a:focus {
 .main-header .navbar .nav > li.user > a > .ion {
   margin-left: 5px;
 }
-.main-header .navbar .nav > li > a > .label {
-  position: absolute;
-  top: 9px;
-  left: 7px;
-  text-align: center;
-  font-size: 9px;
-  padding: 2px 3px;
-  line-height: .9;
+.navbar .nav > li > a > .label {
+  position: absolute !important;
+  top: 9px !important;
+  left: 7px !important;
+  text-align: center !important;
+  font-size: 9px !important;
+  padding: 2px 3px !important;
+  line-height: .9 !important;
 }
 .main-header .logo {
   -webkit-transition: width 0.3s ease-in-out;

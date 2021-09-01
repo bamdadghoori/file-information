@@ -2,6 +2,7 @@
  * Skin: Blue
  * ----------
  */
+ 
 .skin-blue .main-header .navbar {
   background-color: #3c8dbc;
 }
@@ -18,14 +19,14 @@
   background: rgba(0, 0, 0, 0.1);
   color: #f6f6f6;
 }
-.skin-blue .main-header .navbar .sidebar-toggle {
+.skin-blue  .navbar .sidebar-toggle {
   color: #ffffff;
 }
-.skin-blue .main-header .navbar .sidebar-toggle:hover {
+.skin-blue .navbar .sidebar-toggle:hover {
   color: #f6f6f6;
   background: rgba(0, 0, 0, 0.1);
 }
-.skin-blue .main-header .navbar .sidebar-toggle {
+.skin-blue .navbar .sidebar-toggle {
   color: #fff;
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
@@ -50,7 +51,7 @@
 .skin-blue .main-header .logo:hover {
   background-color: #357ca5;
 }
-.skin-blue .main-header li.user-header {
+.skin-blue li.user-header {
   background-color: #3c8dbc;
 }
 .skin-blue .content-header {
@@ -117,6 +118,10 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 2px;
 }
+.skin-blue .sidebar-form input[type="text"]{
+  margin-top: -0.2vh;
+  height: 36px;
+ }
 .skin-blue .sidebar-form input[type="text"]:focus,
 .skin-blue .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   background-color: #fff;
