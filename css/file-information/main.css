@@ -61,7 +61,7 @@
     /* min-height: 100%; */
     padding: 20px;
     position: relative;
-    
+    top:-5vh;
   }
   
   #formContent {
@@ -954,6 +954,9 @@ input:focus ~ .floating-label-price{
   .floating-label{
     left:53vw;
   }
+  .wrapper-form{
+    top:0vh
+  }
   input:focus ~ .floating-label{
     left:53vw;
         top: -3vh;
@@ -1016,7 +1019,7 @@ left: 56.5vw;
   ;
 }
 .blurLabel-size{
-  left: 57vw !important;
+  left: 47vw !important;
 }
 .blurLabel-format{
   left:56.5vw !important;
@@ -1101,24 +1104,25 @@ textarea:focus ~ .floating-label-link-text{
 /* responsive miani */
 @media screen  and (min-width:531px) and (max-width:700px){
   .vali{
-    top:27vh;
-    left:32vw;
+  
+    left:-20vw;
+  }
+  .wrapper-form{
+    top:0vh
   }
   .vali-password {
     left: 22vw !important;
     width: 60vw;
 }
-  .wrapper{
-    top:27vh;
-  }
+  
   body{
     position: relative;
   }
   .floating-label{
-    left:37vw;
+    left:56vw;
   }
   input:focus ~ .floating-label{
-    left:37vw;
+    left:56vw;
   }
   /* input:focus ~ .floating-label{
     left:35vw;
@@ -1140,22 +1144,22 @@ left: 58vw;
    left:45vw;
   }
   .floating-label-size{
-    left: 54vw;
+    left: 49vw;
   }
   input:focus ~ .floating-label-size{
-    left: 54vw;
+    left: 49vw;
   }
-  .floating-label-membership-time{
-   left: 45vw;
+  .floating-label-code{
+   left: 57vw;
   }
-  input:focus ~ .floating-label-membership-time{
-        left: 45vw;
+  input:focus ~ .floating-label-code{
+        left: 57vw;
   }
   .floating-label-price{
-   left: 48vw;
+   left: 51vw;
   }
   input:focus ~ .floating-label-price{
-    left: 48vw;
+    left: 51vw;
   }
   .select2-container{
     width: 67vw !important;
@@ -1164,21 +1168,30 @@ left: 58vw;
 .floating-label-abilities{
   left: 54vw !important;
 }
-.blurLabel-name-family{
-  left: 37vw !important;
+.blurLabel-title{
+  left: 56vw !important;
 }
-.blurLabel-mobile{
+.blurLabel-size{
   left: 49vw !important;
 }
-.blurLabel-email{
-  left: 58.5vw !important
+.blurLabel-code{
+  left: 57vw !important
   ;
 }
-.blurLabel-membership-time{
-  left: 45vw !important;
+.floating-label-nick-name{
+  left:45vw
 }
-.blurLabel-password{
-  left: 54vw !important;
+input:focus ~ .floating-label-nick-name{
+  left:45vw;
+}
+.blurLabel-category{
+  left: 49vw !important;
+}
+.blurLabel-format{
+  left: 58vw !important;
+}
+.blurLabel-nick-name{
+  left: 45vw !important;
 }
 .blurLabel-membership-type{
   left: 48vw !important;
@@ -1187,7 +1200,32 @@ left: 58vw;
   left:45vw !important;
 }
 .floating-label-platform{
-  left: 58.5vw;
+  left: 53vw;
+}
+.floating-label-render{
+  left:57vw;
+}
+.floating-label-style{
+  left:60vw;
+}
+.link-text{
+  width: 63vw;
+}
+.floating-label-link-text{
+font-size: 2vh;
+left: 48vw;
+}
+textarea:focus ~ .floating-label-link-text{
+  left: 48vw;
+}
+.forcible-link-text{
+  left:4.5vw;
+  top:1vh;
+}
+.forcible-material,.forcible-activity{
+  left: 9vw;
+  top: 1vh;
+
 }
 .select2-container{
   width: 58vw !important;
@@ -1232,45 +1270,46 @@ left: 58vw;
 }
 }
 @media screen and (min-width:701px) and (max-width:992px) {
+  .wrapper-form{
+    top:0vh
+  }
   .vali{
     /* top:20vh; */
-    left:32vw;
+    left:-15vw;
     margin-top: 6vh;
+    top: -3vh;
   }
   .vali-password{
     left: 7vw !important;
   }
   .floating-label{
-    left: 7vw;
+    left: 40vw;
     font-size: 2vh;
 
   }
   input:focus ~ .floating-label{
-    left: 7vw;
+    left: 40vw;
     font-size: 2vh;
 
   }
-  /* input:focus ~ .floating-label{
-    left:35vw;
-        top: -3vh;
-  } */
+  
   .floating-label-category{
-    left: 12vw;
+    left: 35vw;
     font-size: 2vh;
 
   }
   input:focus ~ .floating-label-category{
-    left: 12vw;
+    left: 35vw;
     font-size: 2vh;
 
   }
   .floating-label-format{
-left: 17vw;
+left: 42vw;
 font-size: 2vh;
 
   }
   input:focus ~ .floating-label-format{
-    left: 17vw;
+    left: 42vw;
     font-size: 2vh;
 
   }
@@ -1280,68 +1319,101 @@ font-size: 2vh;
 
   }
   .floating-label-size{
-    left: 15vw;
+    left: 36vw;
     font-size: 2vh;
 
   }
   input:focus ~ .floating-label-size{
-    left: 15vw;
+    left: 36vw;
     font-size: 2vh;
 
   }
-  .floating-label-membership-time{
-   left: 10vw;
-   font-size: 2vh;
-
+  .floating-label-code{
+    left: 42vw;
+    font-size: 2vh;
   }
-  input:focus ~ .floating-label-membership-time{
-        left: 10vw;
+
+  .floating-label-nick-name{
+    left: 33vw;
+  }
+  input:focus ~ .floating-label-nick-name{
+    left: 33vw;
+  }
+  input:focus ~ .floating-label-code{
+        left: 42vw;
         font-size: 2vh;
 
   }
   .floating-label-price{
-   left: 11vw;
+   left: 41vw;
    font-size: 2vh;
 
   }
   input:focus ~ .floating-label-price{
-    left: 11vw;
+    left: 41vw;
     font-size: 2vh;
 
   }
 
-  .blurLabel-name-family{
-    left: 7vw !important;
+  .blurLabel-title{
+    left: 40vw !important;
   }
-  .blurLabel-mobile{
-    left: 12vw !important;
+  .blurLabel-size{
+    left: 36vw !important;
   }
-  .blurLabel-email{
-    left: 17vw !important
+  .blurLabel-category{
+    left: 35vw !important;
+  }
+  .blurLabel-format{
+    left: 42vw !important
     ;
   }
-  .blurLabel-membership-time{
-    left: 10vw !important;
+  .blurLabel-code{
+    left: 42vw !important;
   }
   .blurLabel-password{
     left: 15vw !important;
   }
-  .blurLabel-membership-type{
-    left: 11vw !important;
+  .blurLabel-nick-name{
+    left: 33vw !important;
   }
   .blurLabel-date{
     left:10vw !important;
   }
   .floating-label-platform{
-    left: 18vw;
+    left: 39vw;
     font-size: 2vh;
   }
-  .floating-label-abilities
+  .floating-label-render
   {
-   left: 43vw;
+   left: 40vw;
   }
-  .blurLabel-abilities{
-    left: 43vw !important;
+  .floating-label-style{
+    left:42vw;
+   
+  }
+  .floating-label-link-text{
+    font-size: 2vh;
+    left: 36vw;
+    top:7px;
+  }
+ textarea:focus ~ .floating-label-link-text{
+    left: 36vw;
+  }
+  .forcible-link-text{
+    left: 3.5vw;
+    top: 1vh;
+  }
+  .forcible-material{
+    left: 7vw;
+    top: 1vh;
+  }
+  .forcible-activity{
+    left: 6.5vw;
+    top: 1vh;
+  }
+  .link-text{
+    width: 45vw;
   }
   input[type=text]{
     font-size: 2vh;
@@ -1372,14 +1444,16 @@ font-size: 2vh;
   input[type=password] {
     font-size: 2vh;
 }
-  
+.wrapper-form{
+  top:0vh
+}
   .floating-label{
-    left: 2vw;
+    left: 11vw;
     font-size: 2vh;
 
   }
   input:focus ~ .floating-label{
-    left: 2vw;
+    left: 11vw;
     font-size: 2vh;
 
   }
@@ -1388,12 +1462,12 @@ font-size: 2vh;
         top: -3vh;
   } */
   .floating-label-category{
-    left: 8vw;
+    left: 6vw;
     font-size: 2vh;
 
   }
   input:focus ~ .floating-label-category{
-    left: 8vw;
+    left: 6vw;
     font-size: 2vh;
 
   }
@@ -1413,38 +1487,50 @@ font-size: 2vh;
 
   }
   .floating-label-size{
-    left: 10vw;
+    left: 8vw;
     font-size: 2vh;
 
+  }
+  .floating-label-code{
+    left: 13vw;
+    font-size: 2vh;
+  }
+  input:focus ~ .floating-label-code{
+    left: 13vw;
   }
   input:focus ~ .floating-label-size{
-    left: 10vw;
+    left: 8vw;
     font-size: 2vh;
 
   }
-  .floating-label-membership-time{
-   left: 5vw;
-   font-size: 2vh;
+  .floating-label-nick-name{
+    left:5vw;
 
   }
-  input:focus ~ .floating-label-membership-time{
-        left: 5vw;
-        font-size: 2vh;
-
+  input:focus ~ .floating-label-nick-name{
+    left:5vw;
   }
   .floating-label-price{
-   left: 6vw;
+   left: 11vw;
    font-size: 2vh;
 
   }
   input:focus ~ .floating-label-price{
-    left: 6vw;
+    left: 11vw;
     font-size: 2vh;
 
   }
-
-  .blurLabel-name-family{
-    left: 2vw !important;
+  .blurLabel-nick-name{
+    left: 5vw !important;
+  }
+  .blurLabel-size{
+    left:8vw !important
+  }
+  .blurLabel-category{
+    left:6vw !important;
+  }
+  .blurLabel-code{
+    left: 13vw !important;
   }
   .blurLabel-mobile{
     left: 8vw !important;
@@ -1466,12 +1552,38 @@ font-size: 2vh;
     left:5vw !important;
   }
   .floating-label-platform{
-    left: 12vw;
+    left: 9vw;
     font-size: 2vh;
+  }
+  .link-text{
+    width:36vw;
+  }
+  .floating-label-link-text{
+    font-size: 2vh;
+    top:4px;
+  }
+  textarea:focus ~ .floating-label-link-text{
+    top:-3vh;
+  }
+  .forcible-link-text{
+    top:0vh;
+  }
+  .material-radio-span{
+    top:1vh;
+    font-size: 2vh;
+    left:-3vw
+  }
+  .activity-radio-span{
+    top:1vh;
+    font-size: 2vh;
+    left: -1vw;
   }
   .floating-label-abilities
   {
    left: 30vw;
+  }
+  .forcible-activity,.forcible-material{
+    top:0.5vh;
   }
   .blurLabel-abilities{
     left: 30vw !important;
@@ -1489,6 +1601,6 @@ font-size: 2vh;
     margin-bottom: 4vh;
   }
   .div-state select {
-    padding: 13px 7px;
+    padding: 0px 7px;
 }
 }
